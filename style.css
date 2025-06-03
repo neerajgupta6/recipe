@@ -103,7 +103,44 @@ form button[type="submit"]:hover,
     width: 40%;
     height: 60%;
     font-size: 20px;
+    transition: all 0.5s ease-in-out;
+    overflow-y: scroll;
 
+}
+.recipe-details-content{
+    padding: 30px;
+}
+.recipeName{
+    text-align: center;
+    text-transform: lowercase;
+    text-decoration: underline;
+}
+.ingredientList{
+    margin-bottom: 10px;
+    margin-left: -20px;
+}
+.recipeInstructions p{
+     line-height: 30px;
+     white-space: pre-line;
+}
+.recipe-close-btn{
+    border:none;
+    font: size 18px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: red;
+    color: #fff;
+}
+/* Adding scrollbar to recipe details popup */
+.recipe-details::-webkit-scrollbar {
+    width:10px;
+
+
+}
+.recipe-details::-webkit-scrollbar-thumb {
+    background-color: aliceblue;
+    border-radius: 16px;
+    --webkit-border-radius:16px;
 }
 
 @media screen and(max-width:600px){
